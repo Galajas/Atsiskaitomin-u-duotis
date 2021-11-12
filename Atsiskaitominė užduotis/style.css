@@ -1,0 +1,314 @@
+.container {
+  background-color: #555;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topNav {
+  overflow: hidden;
+  background-color: rgb(172, 123, 123);
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  width: 100%;
+}
+
+.firstLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 25%;
+  padding: 10px;
+}
+
+.myLinks {
+  display: none;
+  height: 50px;
+  border-top: rgba(0, 0, 0, 0.116) solid 1px;
+  align-items: center;
+  background-color: rgb(136, 93, 93);
+}
+
+.hoover {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.menuButton {
+  align-self: center;
+  padding-right: 15px;
+}
+
+.icon {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.menuBurger {
+  width: 30px;
+}
+
+.topNav a:hover {
+  color: black;
+}
+
+.myLinks:hover {
+  background-color: rgb(211, 81, 81);
+}
+
+.imageContainer {
+  width: 100%;
+  background-size: cover;
+  background-image: url("/Atsiskaitominė užduotis/photo/photo1.jpg");
+}
+
+.colorBlurr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.name {
+  font-weight: 400;
+  font-size: 150%;
+  color: white;
+}
+
+.imageReplace {
+  margin-top: 20px;
+  display: unset;
+  width: 80%;
+}
+
+.imgRep {
+  display: block;
+  width: 100%;
+}
+
+.videoContainer {
+  display: none;
+}
+
+.newsContainer,
+.contactsContainer {
+  width: 80%;
+  background-color: rgb(136, 93, 93);
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.headerText {
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.newsContainer ul {
+  color: rgba(255, 255, 255, 0.562);
+  padding: 0px 30px;
+}
+
+.imagesContainer {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+.photo {
+  margin: 0px;
+}
+
+.imageItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoItem6,
+.photoItem7,
+.photoItem8 {
+  display: none;
+}
+
+.bigPhoto {
+  width: 80%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.cssHero {
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: -150px;
+  margin: auto;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.contactsLogo {
+  width: 25px;
+}
+
+.contactsContainer .contactsText {
+  padding: 10px 20px;
+  align-self: flex-start;
+}
+
+.mapContainer {
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .logo {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .firstLine {
+    display: block;
+  }
+
+  .myLinks {
+    display: flex;
+    border-top: unset;
+    align-items: center;
+    background-color: unset;
+  }
+
+  .hoover {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .myLinks:hover {
+    background-color: unset;
+  }
+
+  .newsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagesContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+  }
+
+  .photoItem1 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+
+  .photoItem2 {
+    grid-column: 4/7;
+    grid-row: 1/4;
+  }
+
+  .photoItem3 {
+    grid-column: 7/10;
+    grid-row: 1/4;
+  }
+
+  .photoItem4 {
+    grid-column: 1/4;
+    grid-row: 4/10;
+  }
+
+  .photoItem5 {
+    grid-column: 4/7;
+    grid-row: 4/7;
+  }
+
+  .photoItem6 {
+    grid-column: 7/10;
+    grid-row: 4/10;
+  }
+
+  .photoItem7 {
+    grid-column: 4/7;
+    grid-row: 4/7;
+  }
+
+  .photoItem8 {
+    grid-column: 4/7;
+    grid-row: 7/10;
+  }
+
+  .photoItem6,
+  .photoItem7,
+  .photoItem8 {
+    display: unset;
+  }
+
+  .contactsContainer .contactsText {
+    padding: 10px 20px;
+    align-self: center;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .imageReplace {
+    display: none;
+  }
+
+  .videoContainer {
+    margin-top: 20px;
+    display: unset;
+    width: 80%;
+  }
+
+  .photoVideo {
+    display: block;
+    width: 100%;
+  }
+}
